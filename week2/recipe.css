@@ -13,7 +13,6 @@ h1{
 	font-weight: bold;
 	font-size:22pt;
 	word-spacing: 0.2em;
-	
 }
 h2{ 
 	color:#A4A400;
@@ -26,12 +25,18 @@ h2{
 	word-spacing: 0.2em;
 }
 p{
-	color:#404040;
-	background-color:
+	color:404040;
 	font-family: Georgia, Garamond;
 	font-size:11pt;
 }
-a{
+
+p.c1{
+	background-color: #F19483;
+}
+p.c2{
+	background-color: #F19483;
+}
+a{ 
 	color: #A4A400;
 }
 ul li{
@@ -40,3 +45,14 @@ ul li{
 img{
 	border:none;
 }
+/*
+<style>
+#comments{
+	float:left;
+	/*padding left:5px;
+	font-family: ;
+	/*text-align: left;
+	background-color: #F19483;
+}
+</style>
+*/
