@@ -1,0 +1,56 @@
+body{
+	background-color: #FFFFFB;
+}
+h1{
+	text-align: center;
+	color:#B07736;
+	font-family: "Century Gothic",Futura,Verdana;
+	font-size:130px;
+}
+p{
+	text-align: center;
+	font-family: ;
+	font-size:;
+}
+a{
+	text-align: center;
+	font-size:20px;
+	color:#B07736;
+
+}
+<style>
+#header{
+	padding: 5px;
+}
+#pie1{
+	height: 305px;
+	width: 305px;
+	float: left;
+	padding-left:305px;
+	text-align: center;
+	font-family: "Century Gothic",Futura,Verdana;
+}
+#pie2{
+	height:305px;
+	width:305px;
+	float:left;
+	padding-left:5px;
+	text-align: center;
+	font-family: "Century Gothic",Futura,Verdana;
+}
+#pie3{
+	height:305px;
+	width:305px;
+	float:left;
+	padding-left:10px;
+	text-align: center;
+	font-family: "Century Gothic",Futura,Verdana;
+}
+#footer{
+	background-color:  ;
+	color:;
+	text-align: center;
+	clear:both;
+	padding:5px;
+}
+</style>
