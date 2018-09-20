@@ -1,6 +1,5 @@
 /*style sheet of pie.html*/
 body{
-	background-color: rbg(0,0,0);
 	background-image: url(https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg);
 	background-attachment: fixed;
 }
@@ -25,16 +24,20 @@ h2{
 	word-spacing: 0.2em;
 }
 p{
-	color:404040;
+	color:#404040;
 	font-family: Georgia, Garamond;
 	font-size:11pt;
 }
 
 p.c1{
-	background-color: #F19483;
+	background-color: #FFFFC8;
+	font-style: italic;
+	width:700px;
 }
 p.c2{
-	background-color: #F19483;
+	background-color: #FFFFC8;
+	font-style: italic;
+	width: 700px;
 }
 a{ 
 	color: #A4A400;
@@ -45,14 +48,3 @@ ul li{
 img{
 	border:none;
 }
-/*
-<style>
-#comments{
-	float:left;
-	/*padding left:5px;
-	font-family: ;
-	/*text-align: left;
-	background-color: #F19483;
-}
-</style>
-*/

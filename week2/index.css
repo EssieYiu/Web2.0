@@ -9,8 +9,6 @@ h1{
 }
 p{
 	text-align: center;
-	font-family: ;
-	font-size:;
 }
 a{
 	text-align: center;
@@ -18,7 +16,7 @@ a{
 	color:#B07736;
 
 }
-<style>
+
 #header{
 	padding: 5px;
 }
@@ -47,10 +45,7 @@ a{
 	font-family: "Century Gothic",Futura,Verdana;
 }
 #footer{
-	background-color:  ;
-	color:;
 	text-align: center;
 	clear:both;
 	padding:5px;
 }
-</style>
