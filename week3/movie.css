@@ -1,13 +1,14 @@
 body{
 	background-image: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/background.png?version=1&modificationDate=1268896312000);
-
+	margin:0 0 0 0;
 }
 div.head{
-	background-image: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/bannerbackground.png?version=1&modificationDate=1268896312000);
+	margin:0 0 0 0;
+	background-image: url(bannerbackground.png);
 	background-repeat: repeat-x;
-	margin:0;
-	position: relative;
-}
+	text-align: center;
+}	
+
 p.TMNT{
 	text-align: center;
 	font-family:Tahoma, Verdana ;
@@ -26,7 +27,7 @@ div.poster{
 div.rotten{
 	background-image: url(http://my.ss.sysu.edu.cn/wiki/download/attachments/7045968/rottenbackground.png?version=1&modificationDate=1268896385000);
 	background-repeat: repeat-x;
-	font-family: Verdana, Tahoma ;
+	font-family: Verdana, Tahoma;
 	font-size:10pt;
 	max-height: 95px;
 }
@@ -66,7 +67,7 @@ p.red{
 	color:red;
 	position: relative;
 	left:100px;
-	bottom:70px;
+	bottom:80px;
 	float: top;
 	margin:0;
 }
@@ -126,15 +127,15 @@ p.critic{
 }
 div.foot{
 	width:800px;
-	height: 20px;
+	height:20px;
 	background-color: #A2B964;
 	text-align: center;
 
 }
 div.link{
-	position: relative;
-	left:86%;
-	bottom:65px;
+	position: fixed;
+	right: 0;
+	bottom:0;
 }
 img.w3c{
 	border:none;
