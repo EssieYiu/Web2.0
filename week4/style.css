@@ -1,146 +1,92 @@
-div.apb{ 
-	height: 20px;
-	width: 20px;
-	border-width: 10px 10px 10px 10px;
-	border-style: solid;
-	border-radius: 20px 20px 20px 20px;
-	border-color: gray gray gray gray;
-	background-color: gray;
-	position:fixed;
-	top:80%;
-	left:60%;
+html,body{
+	height: 100%;
+	width:100%;
+	overflow: hidden;
+	margin:0px;
+	padding:0px;
 }
-div.icon{
-	position:relative;
-	right: 3px;
+#at-plus-container{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	width:200px;
+	height:100%;
 }
-li{
-	list-style-type: none;
+#bottom-positioner{
+	position: absolute;
+	width:100%;
+	bottom:0;
 }
 #info-bar{
-	height: 150px;
-	width: 150px;
-	border-width: 5px;
-	border-radius: 100px;
-	border-color: gray;
-	border-style: solid;
-	background-color: gray;
-	display: inline-block;
+	position: absolute;
+	bottom: 70px;
+	left:40px;
+	width:130px;
+	height: 130px;
+	border-radius: 50%;
+	background-color: #9E9E9E;
+	transition: all 0.3s;
+	opacity: 0;
 }
-div.info{
-	height:150px;
-	width:150px;
-	position: relative;
-	bottom:10px;
+#button:hover #info-bar{
+	bottom: 200px;
+	left:40px;
+	opacity: 1;
 }
-li.page_user{
-	display: inline-block;
-	position:relative;
-	bottom:100%;
-	left:20%;
+#info-bar ul{
+	margin:0px;
+	padding:0px;
 }
-li.page_comment{
-	display: block;
-	position:relative;
-	top:50%;
-}
-li.mine_posted{
-	display: inline-block;
-	position: relative;
-	right:10%;
-	top:20%;
-	max-width:45px;
-}
-li.mine_like{
-	display: inline-block;
-	position: relative;
-	left:10%;
-}
-#user{
-	font-size:30px;
+#info-bar li{
+	width:130px;
+	height: 30px;
+	text-align: center;
 	color:white;
 }
-#comment{
-	font-size:40px;
-	color:white;
+#info-bar li.user{
+	margin-top:10px;
+	font-size: 20px;
 }
-#posted{
-	font-size:25px;
-	font-weight: bold;
-	color:green;
+#info-bar li.comment{
+	font-size: 32px;
 }
-#like{
-	font-size:25px;
+#info-bar li.mine{
+	margin-top: 8px;
+	width:50%;
+	display: inline-block;
+	color: #079E6E;
 	font-weight: bold;
-	color: green;
 }
 #control-ring-container{
-	display: inline-block;
+	position: absolute;
+	bottom: 30px;
+	left:0;
+	width:190px;
+	height: 190px;
+	border-radius: 50%;
 }
-#control-ring{
-	margin:0;
-	height: 200px;
+li{
+	list-style: none;
 }
-li.mask_button{
-	height:20px;
-	width: 20px;
-	border-width: 10px 10px 10px 10px;
-	border-style: solid;
-	border-radius: 20px 20px 20px 20px;
-	border-color: gray gray gray gray;
-	background-color: gray;
-	display: inline-block;
-	position: relative;
-}
-li.history_button{
-	height: 20px;
-	width: 20px;
-	border-width: 10px 10px 10px 10px;
-	border-style: solid;
-	border-radius: 20px 20px 20px 20px;
-	border-color: gray gray gray gray;
-	background-color: gray;
-	display: inline-block;
-	position: relative;
-	top:15%;
-}
-li.message_button{
+#control-ring-container li{
+	position: absolute;
+	display: block;
+	width:30px;
 	height: 30px;
-	width: 30px;
-	border-width: 5px 5px 5px 5px;
-	border-style: solid;
-	border-radius: 30px 30px 30px 30px;
-	border-color: gray gray gray gray;
-	background-color: gray;
-	display: inline-block;
-	position: relative;
-	top:20%;
+	border-radius: 50%;
+	border:#9E9E9E solid 5px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #9E9E9E;
+	background-size: 20px 20px;
+	margin-top: 50px;
+	margin-left: 40px;
+	transition: all 0.3s;
+	opacity: 0;
 }
-li.setting_button{
-	height: 20px;
-	width: 20px;
-	border-width: 10px 10px 10px 10px;
-	border-style: solid;
-	border-radius: 20px 20px 20px 20px;
-	border-color: gray gray gray gray;
-	background-color: gray;
-	display: inline-block;
-	position: relative;
-	top:35%;
+#button:hover #control-ring-container li{
+	opacity: 1;
 }
-li.sign_button{
-	height: 20px;
-	width: 20px;
-	border-width: 10px 10px 10px 10px;
-	border-style: solid;
-	border-radius: 20px 20px 20px 20px;
-	border-color: gray gray gray gray;
-	background-color: gray;
-	display: inline-block;
-	position: relative;
-	top:45%;
-}
-
 span.unread{
 	text-align: center;
 	line-height: 100%;
@@ -148,19 +94,73 @@ span.unread{
 	display:block;
 	height: 16px;
 	width: 16px;
-	border-width:2px;
-	border-style: solid;
+	border:red solid 2px;
 	border-radius: 100%;
-	border-color: red;
 	background-color: red;
 	position: relative;
 	left: 60%;
 	bottom:50%;
-	margin:0;
 }
-#letter{
-	position: relative;
-	bottom:50%;
-	left:15%;
-	display: block;
+#control-ring-container li:nth-child(1){
+	background-image: url(assets/images/nomask.png);
 }
+#button:hover #control-ring-container li:nth-child(1){
+	margin-top: 0px;
+	margin-left: -5px;
+}
+#control-ring-container li:nth-child(2){
+	background-image: url(assets/images/history.png);
+}
+#button:hover #control-ring-container li:nth-child(2){
+	margin-top: 40px;
+	margin-left:-35px;
+}
+#control-ring-container li:nth-child(3){
+	background-image: url(assets/images/message.png);
+}
+#button:hover #control-ring-container li:nth-child(3){
+	margin-top: 90px;
+	margin-left: -30px;
+}
+#control-ring-container li:nth-child(4){
+	background-image: url(assets/images/setting.png);
+}
+#button:hover #control-ring-container li:nth-child(4){
+	margin-top: 125px;
+	margin-left: 10px;
+}
+#control-ring-container li:nth-child(5){
+	background-image: url(assets/images/signin.png);
+}
+#button:hover #control-ring-container li:nth-child(5){
+	margin-top: 125px;
+	margin-left: 60px;
+}
+#button{
+	width:60px;
+	height: 60px;
+	margin:100px 70px;
+}
+#button .apb{
+	width:30px;
+	height:30px;
+	border-radius: 50%;
+	position: absolute;
+ 	left:85px;
+ 	bottom: 115px;
+ 	background-image: url(assets/images/atplus_white.png);
+ 	background-size: 25px 20px;
+ 	background-color: #985FCF;
+ 	background-repeat: no-repeat;
+ 	background-position:center;
+ 	transition: all 0.3s;
+ }
+ #button:hover .apb{
+	width:50px;
+	height:50px;
+ 	left:75px;
+ 	bottom: 105px;
+ 	background-image: url(assets/images/atplus_green.png);
+ 	background-size: 40px 30px;
+ 	background-color: rgba(48, 63, 159, 1);
+ }
