@@ -49,13 +49,22 @@ html,body{
 }
 #info-bar li.comment{
 	font-size: 32px;
+	font-weight:bold;
 }
 #info-bar li.mine{
-	margin-top: 8px;
-	width:50%;
+	margin-top: 10px;
+	width: 40px;
 	display: inline-block;
-	color: #079E6E;
+	color: #43daaa;
 	font-weight: bold;
+}
+#info-bar li.like{
+	position: absolute;;
+	left:70px;
+}
+#info-bar li.posted{
+	position: absolute;
+	left:15px;
 }
 #control-ring-container{
 	position: absolute;
@@ -139,7 +148,6 @@ span.unread{
 #button{
 	width:60px;
 	height: 60px;
-	margin:100px 70px;
 }
 #button .apb{
 	width:30px;
@@ -150,12 +158,13 @@ span.unread{
  	bottom: 115px;
  	background-image: url(assets/images/atplus_white.png);
  	background-size: 25px 20px;
- 	background-color: #985FCF;
+ 	background-color: rgba(120, 120, 120, 1);
  	background-repeat: no-repeat;
  	background-position:center;
  	transition: all 0.3s;
  }
- #button:hover .apb{
+
+#button:hover .apb{
 	width:50px;
 	height:50px;
  	left:75px;

@@ -1,0 +1,72 @@
+body{
+	background-color:#B19693;
+}
+#all{
+	margin-left: auto;
+	margin-right: auto;
+	width:360px;
+}
+#header{
+	font-family:"Microsoft YaHei","SimHei" ;
+	font-size:50px;
+	text-align: center;
+	letter-spacing: 0.3em;
+	color: #FCFAF2;
+}
+#cal{
+	border:2px solid;
+	text-align: center;
+	padding-top: 20px;
+	background-color:#FCFAF2;
+	border-radius: 10px 10px 10px 10px;
+}
+input{
+	width:290px;
+	height: 120px;
+	margin-bottom: 10px;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-size: 26px;
+	color: white;
+	background-color: #51A8DD;
+	border:none;
+	border-radius: 15px 15px 15px 15px;
+}
+input:hover{
+	font-size: 35px;
+}
+button{
+	width:60px;
+	height: 60px;
+	margin:10px 5px 10px 5px;
+	font-family:'Trebuchet MS', Helvetica, sans-serif ;
+	font-size:22px;
+	border:none;
+	border-radius:50%;
+}
+button.num{
+	background-color:#FAD689;
+	transition: all 0.5s;
+}
+button.num:hover{
+	background-color: #FFB11B;
+	font-size: 30px;
+	font-weight: bold;
+}
+button.operation{
+	background-color: #F8C3CD;
+	transition: all 0.5s;
+}
+button.operation:hover{
+ 	background-color:#E87A90 ;
+ 	font-size: 30px;
+	font-weight: bold;
+}
+button.special{
+	background-color:#BDC0BA;
+	transition: all 0.5s;
+}
+button.special:hover{
+	background-color:#877F6C ;
+	font-size: 30px;
+	font-weight: bold;
+}
