@@ -69,7 +69,7 @@ window.onload = function(){
 		document.getElementById("result").value = expression;
 	}
 	document.getElementById("del").onclick = function(){
-		expression = expression.substr(0,expression.length-1);
+		expression = expression.substring(0,expression.length-1);
 		document.getElementById("result").value = expression;
 	}
 	document.getElementById("clr").onclick = function(){
@@ -81,10 +81,13 @@ window.onload = function(){
 		try{
 			v = eval(expression);
 			v.toFixed(2);
-			document.getElementById("result").value = v;
+			document.getElementById("result").value = v.toFixed(2);
+			expression = v.toString();
 		}
 		catch(EvalError){
 			document.getElementById("result").value = "Invalid expression!";
+			alert("Invalid expression!")
+			expression = "";
 		}
 	}
 }

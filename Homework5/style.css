@@ -31,9 +31,6 @@ input{
 	border:none;
 	border-radius: 15px 15px 15px 15px;
 }
-input:hover{
-	font-size: 35px;
-}
 button{
 	width:60px;
 	height: 60px;
@@ -49,8 +46,6 @@ button.num{
 }
 button.num:hover{
 	background-color: #FFB11B;
-	font-size: 30px;
-	font-weight: bold;
 }
 button.operation{
 	background-color: #F8C3CD;
@@ -58,8 +53,6 @@ button.operation{
 }
 button.operation:hover{
  	background-color:#E87A90 ;
- 	font-size: 30px;
-	font-weight: bold;
 }
 button.special{
 	background-color:#BDC0BA;
@@ -67,6 +60,4 @@ button.special{
 }
 button.special:hover{
 	background-color:#877F6C ;
-	font-size: 30px;
-	font-weight: bold;
 }
