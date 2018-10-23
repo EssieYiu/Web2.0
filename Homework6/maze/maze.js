@@ -13,19 +13,22 @@ window.onload = function(){
 
 }
 function startGame(){
-	//alert("start!");
+	document.getElementById("show").style.fontSize = "26px";
 	document.getElementById("show").value = "Game Start"
 	gamestatus = 1;
 	valid = 0;
 }
 function endGame(){
 	if(gamestatus == 1){
-		if(valid == 0)
-			//alert("chearting!");
-			document.getElementById("show").value = "Don't cheat!"
-		else
-			//alert("winning!");
-			document.getElementById("show").value = "You Win"
+		if(valid == 0){
+			document.getElementById("show").style.fontSize = "18px";
+			document.getElementById("show").value = "Don't cheat, you should start form the 'S' and move to the 'E' inside the maze!"
+		}
+		else{
+			document.getElementById("show").style.fontSize = "26px";
+			document.getElementById("show").value = "You Win"			
+		}
+
 	}
 	gamestatus = 2;
 }
@@ -34,6 +37,7 @@ function setValid(){
 }
 function bump(){
 	if(gamestatus == 1){
+		document.getElementById("show").style.fontSize = "26px";
 		document.getElementById("show").value = "You Lose";
 		this.style.backgroundColor = "red";
 		setTimeout("back()",300);

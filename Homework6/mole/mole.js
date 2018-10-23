@@ -49,16 +49,24 @@ function hit(){
 		this.value = 0;
 		this.style.border = "2px green solid";
 		document.getElementById("S").value =score;
+		appear();
 	}
+	else{
+		score--;
+		document.getElementById("S").value = score;
+	}
+
 }
 function reset(){
 	time = 30;
 	score = 0;
 	document.getElementById("T").value = time;
 	document.getElementById("S").value = score;
+	appear();
 	setTime();
 }
 function set(){
+	appear();
 	setTime();
 }
 function setTime(){
@@ -79,13 +87,13 @@ function setTime(){
 	time--;
 	document.getElementById("T").value = time;
 	
-	for(var i = 0; i < holes.length; i++){
+	/*for(var i = 0; i < holes.length; i++){
 		if(holes[i].value == 1){
 			score--;
 			document.getElementById("S").value = score;
 		}
 	}
-	appear();
+	appear();*/
 	setTimeout(setTime,1000);
 }
 function appear(){

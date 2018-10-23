@@ -13,9 +13,10 @@ p.rule{
 }
 #show{
 	display: block;
-	width:300px;
+	width:700px;
 	height: 80px;
-	background-color: #FAD689;
+	background-color: white;
+	color: #FAD689;
 	border:none;
 	margin-right: auto;
 	margin-left: auto;
@@ -24,7 +25,6 @@ p.rule{
 	text-align: center;
 	font-size: 26px;
 	font-weight: bold;
-	color: white;
 }
 #maze{
 	margin-left: auto;
