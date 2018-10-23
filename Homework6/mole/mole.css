@@ -1,0 +1,103 @@
+body{
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+p, h1{
+	text-align: center;
+}
+p.ins{
+	text-align: left;
+	text-indent: 10px;
+	margin:0;
+}
+ol{
+	margin:0;
+}
+#items{
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+}
+#btn{
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	margin:0px auto 10px auto;
+	width:300px;
+	height: 50px;
+	color: #3A3226;
+	background-color:white;
+	border:2px solid #3A3226;
+	text-align: center;
+	font-size: 30px;
+
+}
+#item{
+	width:280px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: bold;
+	font-size: 20px;
+}
+#time{
+	width:50%;
+	margin-right:10px;
+	margin-left: 5px;
+	color: black;
+}
+#score{
+	margin-left: 5px;
+	width: 50%;
+	color: black;
+}
+#T{
+	width:60px;
+	height:40px;
+	background-color: white;
+	color:black;
+	border:none;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 10px 10px 10px 10px;
+}
+#S{
+	width: 60px;
+	height: 40px;
+	background-color:white;
+	color: black;
+	border:none;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 10px 10px 10px 10px;
+}
+#game{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 300px;
+	height: 70px;
+	text-align: center;
+	font-size: 40px; 
+	background-color: white;
+	color: #3A3226;
+	border:none;
+}
+#moles{
+	margin:10px;
+	margin-left: auto;
+	margin-right: auto;
+	width:500px;
+	height: 300px;
+	border:solid black 2px;
+}
+#molesposition{
+	position: absolute;
+	width:500px;
+	height: 300px;
+}
+.holes{
+	width:20px;
+	height:20px;
+	margin:15px;
+	border-radius:50%;
+	border:2px solid #BDC0BA;
+	background-color: white;
+}

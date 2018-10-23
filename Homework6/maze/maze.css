@@ -1,0 +1,149 @@
+h1{
+	text-align: center;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	margin:0;
+}
+p{
+	text-align: center;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	margin:5px;
+}
+p.rule{
+	font-size: 18px;
+}
+#show{
+	display: block;
+	width:300px;
+	height: 80px;
+	background-color: #FAD689;
+	border:none;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 10px 10px 10px 10px;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+	color: white;
+}
+#maze{
+	margin-left: auto;
+	margin-right: auto;
+	height:400px; 
+	width:600px;
+}
+#mazeposition{
+	position: absolute;
+}
+div.wall{
+	position: absolute;
+	background-color: #E1A679;
+	display: inline-block;
+	border:1px black;
+	margin:0;
+	padding: 0;
+	transition: all 0.3s;
+}
+#one{
+	width: 200px;
+	height:70px;	
+	border-style: solid none none solid;
+}
+#two{
+	left:199px;
+	width: 205px;
+	height:70px;
+	border-style: solid none solid none;
+}
+#three{
+	left: 400px;
+	width: 201px;
+	height: 70px;
+	border-style: solid solid none none;
+}
+#four{
+	top:70px;
+	width:200px;
+	height:200px;
+	border-style: none solid solid solid;
+}
+#five{
+	top:70px;
+	left: 400px;
+	width: 200px;
+	height: 200px;
+	border-style: none solid solid solid;
+}
+#six{
+	top:140px;
+	left: 270px;
+	width: 60px;
+	height: 190px;
+	border-style: solid solid none solid;
+}
+#seven{
+	top:330px;
+	width: 270px;
+	height: 70px;
+	border-style: solid none solid solid;
+}
+#eight{
+	top:330px;
+	left:270px;
+	width: 60px;
+	height: 71px;
+	border-style: none none solid none;
+}
+#nine{
+	top:330px;
+	left:330px;
+	width: 270px;
+	height: 70px;
+	border-style: solid solid solid none;
+}
+#S{
+	position: absolute;
+	top:275px;
+	width:50px;
+	height: 50px;
+	background-color: #A8D8B9;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	text-align: center;
+	font-size: 30px;
+}
+#invisible{
+	position: absolute;
+	top:270px;
+	left: 545px;
+	width: 5px;
+	height: 60px;
+	background-color: yellow;
+	opacity:0;
+}
+#E{
+	position: absolute;
+	top:275px;
+	left:550px;
+	width:50px;
+	height: 50px;
+	background-color: #A5DEE4;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+	text-align: center;
+	font-size: 30px;
+}
+#Epai{
+	position: absolute;
+	top: 270px;
+	left:596px;
+	width:5px;
+	height: 60px;
+	background-color: red;
+	opacity: 0;
+}
+#wallSign{
+	width:50px;
+	height:25px;
+	background-color: #E1A679;
+	margin-right: auto;
+	margin-left: auto;
+}
