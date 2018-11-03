@@ -1,0 +1,32 @@
+body{
+	font-family:'Lucida Sans Unicode', 'Lucida Grande',  sans-serif;
+	text-align: center;
+}
+
+#puzzel{
+	margin-left: auto;
+	margin-right: auto;
+	height: 352px;
+	width:352px;
+}
+#position{
+	position: absolute;
+}
+#restart{
+	margin-top:20px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: lightblue;
+	width:100px;
+	height: 50px;
+}
+div.small{
+	width:88px;
+	height: 88px;
+	position:absolute;
+	transition: all 0.5s ease;
+	background-image: url(./panda.jpg);
+}
+.small:hover{
+	transform: scale(1.05);
+}
