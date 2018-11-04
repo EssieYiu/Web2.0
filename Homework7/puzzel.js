@@ -1,3 +1,4 @@
+var first = 1;
 window.onload = function(){
 	createPuzzel(); 
 	document.getElementById("restart").onclick = restart;
@@ -19,6 +20,7 @@ function createPuzzel(){
 			node.className = "small";
 			if((i == 3)&&(j == 3)){
 				node.style.backgroundImage = "none";
+				node.style.border = "none";
 			}
 			else{
 				node.style.backgroundPosition = "-"+parseInt(left)+"px -"+parseInt(top)+"px";
@@ -32,6 +34,7 @@ function createPuzzel(){
 	temp2.appendChild(temp);
 }
 function restart(){
+	document.getElementById("win").innerHTML = "";
 	var temp = document.getElementById("position");
 	for(var i = 0; i < 6; i++){
 		var ran = (Math.random()*100)%16;
@@ -44,6 +47,8 @@ function restart(){
 		nodes[i].style.top = parseInt(Math.floor(i/4)*88)+"px";
 		nodes[i].style.left = parseInt(i%4*88)+"px";
 	}
+	if(!isValid())
+		restart();
 }
 function corret(){
 	var temp = document.getElementsByClassName("small");
@@ -57,7 +62,6 @@ function move(){
 	var blank = document.getElementById("15");
 	var swaptop,swapleft;
 	if(this.style.top == blank.style.top){
-		//alert("top");
 		if(Math.abs(parseInt(this.style.left)-parseInt(blank.style.left)) == 88){
 			swapleft = parseInt(this.style.left);
 			this.style.left = blank.style.left;
@@ -71,7 +75,26 @@ function move(){
 			blank.style.top = swaptop+"px";
 		}
 	}
-	if(corret == true){
-		alert("you win");
+	if((corret() == true)&&(!first)){
+		document.getElementById("win").innerHTML = "You win";
+		first = 1;
+		return;
 	}
+	if(first == 1){
+		first = 0;
+		document.getElementById("win").innerHTML = "";
+	}
+}
+function isValid(){
+	var temp = document.getElementsByClassName("small");
+	var count = 0;
+	for(var i = 0; i < 16; i++){
+		for(var j = i+1; j < 16; j++){
+			if(temp[i].id > temp[j].id)
+				count++;
+		}
+	}
+	if((count%2) == 0)
+		return true;
+	return false;
 }
