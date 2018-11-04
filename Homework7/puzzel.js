@@ -8,6 +8,8 @@ window.onload = function(){
 	}
 }
 function createPuzzel(){
+	document.getElementById("win").style.fontSize = "20px";
+	document.getElementById("win").innerHTML = "您可以手动打乱或者点重新开始键让系统帮您打乱拼图来开始游戏";
 	var temp = document.createDocumentFragment();
 	for(var i = 0; i < 4; i++){
 		for(var j = 0; j < 4; j++){
@@ -61,21 +63,29 @@ function corret(){
 function move(){
 	var blank = document.getElementById("15");
 	var swaptop,swapleft;
+	var val;
 	if(this.style.top == blank.style.top){
 		if(Math.abs(parseInt(this.style.left)-parseInt(blank.style.left)) == 88){
 			swapleft = parseInt(this.style.left);
+			val = this.value;
 			this.style.left = blank.style.left;
+			this.value = blank.value;
 			blank.style.left = swapleft+"px";
+			blank.value = val;
 		}
 	}
 	else if(this.style.left == blank.style.left){
 		if(Math.abs(parseInt(this.style.top)-parseInt(blank.style.top)) == 88){
 			swaptop = parseInt(this.style.top);
+			val = this.value;
 			this.style.top = blank.style.top;
+			this.value = blank.value;
 			blank.style.top = swaptop+"px";
+			blank.value =val;
 		}
 	}
 	if((corret() == true)&&(!first)){
+		document.getElementById("win").style.fontSize = "40px";
 		document.getElementById("win").innerHTML = "You win";
 		first = 1;
 		return;
