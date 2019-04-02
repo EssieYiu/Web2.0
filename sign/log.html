@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>log page</title>
+	<link rel="stylesheet" type="text/css" href="log.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	
+	<div id="main">
+		<p>用户注册</p>
+		<form method="POST">
+			用户名：<input type="text" name="username" pattern="[A-z][A-z0-9_]{5,17}" title="输入6-18位字母或数字，并以字母开头"><br>
+			学号  ：  <input type="text" name="id" pattern="[1-9][0-9]{7}" title="学号为8位数字"><br>
+			电话  ：  <input type="text" name="phone" pattern="[1-9][0-9]{10}"><br>
+			邮箱  ：  <input type="text" name="email" pattern="^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$"><br>
+			<input type="reset" name="Reset" value="重置">
+			<input type="submit" name="Submit" value="提交">
+		</form>
+	</div>
+
+</body>
+</html>
